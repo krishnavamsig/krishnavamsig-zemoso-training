@@ -3,11 +3,11 @@ import java.util.*;
 import java.io.*;
 public class alpha{
     public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-      System.out.print("\nEnter your String ");
-    String str;
-    str=in.nextLine();
-    str=str.toLowerCase();
+        Scanner in = new Scanner(System.in);
+        System.out.print("\nEnter your String ");
+        String str;
+        str=in.nextLine();
+        str=str.toLowerCase();
         boolean[] alphaList = new boolean[26];
         int index = 0;
         int flag = 1;
