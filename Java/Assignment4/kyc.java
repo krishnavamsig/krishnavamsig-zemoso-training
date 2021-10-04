@@ -1,12 +1,6 @@
 import java.util.*;
 public class kyc {
-    public static void main(String[] args)
-    {
-        kyc kyc=new kyc();
-        kyc.printKycRange();
-
-
-    }
+    
 
     public void printDate(Calendar start,Calendar end)
     {
@@ -51,6 +45,13 @@ public class kyc {
             }
             t--;
         }
+    }
+    public static void main(String[] args)
+    {
+        kyc kyc=new kyc();
+        kyc.printKycRange();
+
+
     }
 
 }
