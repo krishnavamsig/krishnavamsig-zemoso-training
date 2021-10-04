@@ -4,9 +4,7 @@ public class SList {
 
 @Override
 public String toString() {
-    return "SList{" +
-            "head=" + head +
-            '}';
+    return "SList{" + "head=" + head +'}';
 }
 
 public SListIterator iterator()

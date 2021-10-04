@@ -6,6 +6,9 @@ Downcast and call balance( ) and observe what happens.
  */
 public class Cycle {
 
-    Cycle(){};
+    Cycle()
+    {
+
+    };
 
 }

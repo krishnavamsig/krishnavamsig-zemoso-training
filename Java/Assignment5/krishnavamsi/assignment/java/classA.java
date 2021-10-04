@@ -8,7 +8,7 @@ public class classA {
     }
     public void show(){
 		int a,b;
-		// System.out.println("The value of c and d are "+ca;
+		// System.out.println(a);
 		// System.out.println(b);
         //The local variable a,b are not initialized so cannot be printed
 		}

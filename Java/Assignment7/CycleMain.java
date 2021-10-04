@@ -16,8 +16,8 @@ public class CycleMain {
         UniCycle uniCycle = new UniCycle();
         uniCycle.balance();
 
-      //  BiCycle newTriCycle = (BiCycle)(cycles[2]);//Since we are using the Cycle reference, we can still call balance() method for TriCycle object.
-       // newTriCycle.balance();
+       BiCycle newTriCycle = (BiCycle)(cycles[2]);//Since we are using the Cycle reference, we can still call balance() method for TriCycle object.
+       newTriCycle.balance();
 
 //        TriCycle triCycle = new TriCycle();
 //        BiCycle triCycleWithBiCycle = (BiCycle)(triCycle); //error -Cannot cast

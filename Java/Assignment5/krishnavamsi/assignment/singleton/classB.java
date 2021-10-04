@@ -2,9 +2,10 @@ package krishnavamsi.assignment.singleton;
 import java.lang.String;
 public class classB{
 	String str;
-		public classB(String otherStr){
+		public classB(String otherStr)
+		{
 		str=otherStr;
-	}
+		}
 	
 	public static String B_method(String s) {
 		//static methods can only access static variables;
