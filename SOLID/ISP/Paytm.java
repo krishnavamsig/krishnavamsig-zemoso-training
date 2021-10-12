@@ -1,6 +1,6 @@
 package ISP;
 
-public class Paytm implements upiPayments{
+public class Paytm implements UpiPayments{
 
     @Override
     public void payMoney() {

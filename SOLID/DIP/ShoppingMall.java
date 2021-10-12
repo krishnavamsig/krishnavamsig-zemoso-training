@@ -1,25 +1,25 @@
 package DIP;
 
  
-public class shoppingMall {
+public class ShoppingMall {
     //private debitCard debitCard;
-    private bankCard bankCard;
+    private BankCard BankCard;
     //constructor
     // public shoppingMall(debitCard debitCard) {
     //     this.debitCard = debitCard;
     // }
-    public shoppingMall(bankCard bankCard) {
-        this.bankCard = bankCard;
+    public ShoppingMall(BankCard BankCard) {
+        this.BankCard = BankCard;
     }
     public void purchaseSomething(long amount){
-        bankCard.doTransaction(amount);
+        BankCard.doTransaction(amount);
     }
     public static void main(String args[]) {
     //      debitCard debitCard=new debitCard();
     //    creditCard creditCard=new creditCard();
 
-       bankCard bankCard=new creditCard();
-       shoppingMall shoppingMall=new shoppingMall(bankCard);
+       BankCard bankCard=new CreditCard();
+       ShoppingMall shoppingMall=new ShoppingMall(bankCard);
        shoppingMall.purchaseSomething(5000);
         
     }

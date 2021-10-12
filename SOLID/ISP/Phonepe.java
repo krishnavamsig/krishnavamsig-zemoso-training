@@ -1,6 +1,6 @@
 package ISP;
 
-public class Phonepe implements upiPayments {
+public class Phonepe implements UpiPayments {
 
     @Override
     public void payMoney() {

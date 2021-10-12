@@ -1,6 +1,6 @@
 package lsp;
 
-public class instagram extends socialMedia{
+public class Whatsapp extends SocialMedia{
 
     @Override
     public void chatWithFriend() {
@@ -11,6 +11,7 @@ public class instagram extends socialMedia{
     @Override
     public void publishPost(Object post) {
         // TODO Auto-generated method stub
+        //Not applicable
         
     }
 
@@ -23,9 +24,9 @@ public class instagram extends socialMedia{
     @Override
     public void groupVideoCall(String... users) {
         // TODO Auto-generated method stub
-        //NOT APPLICABLE
+        
     }
     
     
 }
-//Because of the method groupVideoCall is not a substitute of its parent-socialMedia,it doesnot follow lsp.
+//Here publishPost is not possible in whatsapp.whatsapp cannot be substituted by socialMedia. So it does not follow lsp

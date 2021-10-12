@@ -1,8 +1,6 @@
 package ocp;
-import java.lang.String;
 
-
-public class emailNotificationService implements NotificationService{
+public class MobileNotificationService implements NotificationService{
 
     @Override
     public void sendOTP(String medium) {
@@ -15,5 +13,6 @@ public class emailNotificationService implements NotificationService{
         // TODO Auto-generated method stub
         
     }
+    
     
 }

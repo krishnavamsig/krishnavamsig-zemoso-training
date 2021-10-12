@@ -1,6 +1,6 @@
 package ocp;
 
-public class mobileNotificationService implements NotificationService{
+public class WhatsappNotificationService implements NotificationService{
 
     @Override
     public void sendOTP(String medium) {
@@ -13,6 +13,5 @@ public class mobileNotificationService implements NotificationService{
         // TODO Auto-generated method stub
         
     }
-    
     
 }

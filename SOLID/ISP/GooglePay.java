@@ -1,6 +1,6 @@
 package ISP;
 
-public class googlePay implements upiPayments,cashBackManager{
+public class GooglePay implements UpiPayments,CashBackManager{
 
     @Override
     public void payMoney() {

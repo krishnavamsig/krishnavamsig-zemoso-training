@@ -1,5 +1,5 @@
 package ISP;
 
-public interface cashBackManager {
+public interface CashBackManager {
     public void getCashBack();
 }
