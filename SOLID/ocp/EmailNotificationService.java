@@ -1,6 +1,8 @@
 package ocp;
+import java.lang.String;
 
-public class whatsappNotificationService implements NotificationService{
+
+public class EmailNotificationService implements NotificationService{
 
     @Override
     public void sendOTP(String medium) {

@@ -1,5 +1,5 @@
 package lsp.solution;
 
-public interface socialVideoCallManager {
+public interface SocialVideoCallManager {
     public  void groupVideoCall(String... users);
 }

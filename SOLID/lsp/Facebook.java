@@ -1,6 +1,6 @@
 package lsp;
 
-public class Facebook extends socialMedia{
+public class Facebook extends SocialMedia{
 
     @Override
     public void chatWithFriend() {

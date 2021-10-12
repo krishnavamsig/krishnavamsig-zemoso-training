@@ -1,5 +1,5 @@
 package lsp.solution;
 
-public interface postMedia {
+public interface PostMedia {
     public void publishPost(Object post);
 }

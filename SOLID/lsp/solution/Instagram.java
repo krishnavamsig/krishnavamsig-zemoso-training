@@ -1,6 +1,6 @@
 package lsp.solution;
 
-public class instagram implements socialMedia,postMedia{
+public class Instagram implements SocialMedia,PostMedia{
 
     @Override
     public void publishPost(Object post) {

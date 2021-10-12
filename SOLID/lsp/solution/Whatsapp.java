@@ -1,25 +1,24 @@
-package ISP;
+package lsp.solution;
 
-public class googlePay implements upiPayments,cashBackManager{
+public class Whatsapp implements SocialMedia,SocialVideoCallManager{
 
     @Override
-    public void payMoney() {
+    public void chatWithFriend() {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void getScratchCard() {
+    public void sendPhotosAndVideos() {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void getCashBack() {
+    public void groupVideoCall(String... users) {
         // TODO Auto-generated method stub
         
     }
-    
     
 }
-//These all are present in GooglePay
+

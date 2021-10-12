@@ -1,6 +1,6 @@
 package lsp;
 
-public class whatsapp extends socialMedia{
+public class Whatsapp extends SocialMedia{
 
     @Override
     public void chatWithFriend() {

@@ -1,6 +1,6 @@
 package lsp;
 
-public class instagram extends socialMedia{
+public class Instagram extends SocialMedia{
 
     @Override
     public void chatWithFriend() {

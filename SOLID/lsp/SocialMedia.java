@@ -1,7 +1,7 @@
 //LSP: derived class must be completely substitute of parent class
 package lsp;
 
-    public abstract class socialMedia {
+    public abstract class SocialMedia {
 
         // WhatsApp,Facebook,Instagram
         public abstract  void chatWithFriend();

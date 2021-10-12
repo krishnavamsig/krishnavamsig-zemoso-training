@@ -1,40 +1,36 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.net.*;
 import java.util.Scanner;
-
 public class pingHost {
-    public static void pingCommand(String command) {
 
-        try {
-            Process p = Runtime.getRuntime().exec(command);
-            BufferedReader inputStream = new BufferedReader(
-                    new InputStreamReader(p.getInputStream()));
+  public static void runSystemCommand(String command) {
 
-            String s = "";
+		try {
+			Process p = Runtime.getRuntime().exec(command);
+			BufferedReader inputStream = new BufferedReader(
+					new InputStreamReader(p.getInputStream()));
 
-            while ((s = inputStream.readLine()) != null) {
-                int index=s.indexOf("time=");
-                String time="";
-                if(index!=-1)
-                    time=s.substring(index+5,index+11);
-               // System.out.println(s);
-                System.out.println(time);
+			String s = "";
+			// reading output stream of the command
+			while ((s = inputStream.readLine()) != null) {
+				System.out.println(s);
+				//p.destroy();
+			}
 
-            }
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		
+		String ip;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the ip address : ");
+		ip =in.nextLine();
+		runSystemCommand("ping " + ip);
 
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    public static void main(String[] args) {
-
-        String ip;
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the ip address : ");
-        ip =in.nextLine();
-        pingCommand("ping -c 4 " + ip);
-
-
-    }
+	
+	}
 }
