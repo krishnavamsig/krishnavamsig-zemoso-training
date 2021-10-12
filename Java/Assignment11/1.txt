@@ -1,0 +1,1 @@
+Demo file to check the occurence of different characters
