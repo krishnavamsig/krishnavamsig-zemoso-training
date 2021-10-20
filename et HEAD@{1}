@@ -1,0 +1,22 @@
+[33m296a11b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD@{1}
+[33mf119247[m HEAD@{1}: reset: moving to HEAD~1
+[33m296a11b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{2}: checkout: moving from new_branch to main
+[33m99a1d21[m[33m ([m[1;32mnew_branch[m[33m)[m HEAD@{3}: checkout: moving from main to new_branch
+[33m296a11b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{4}: commit: Java Assignments
+[33mf119247[m HEAD@{5}: pull origin main: Fast-forward
+[33m62adfa9[m HEAD@{6}: commit: Solid Principles
+[33m93f8e1c[m HEAD@{7}: commit: Solid Principles
+[33m045b19f[m HEAD@{8}: commit: new changes
+[33m39d537c[m HEAD@{9}: commit: Assignments 6-10
+[33m30aabc6[m HEAD@{10}: checkout: moving from new_branch to main
+[33m99a1d21[m[33m ([m[1;32mnew_branch[m[33m)[m HEAD@{11}: commit: Assignment 8 sample to new_branch
+[33mb27c6ef[m HEAD@{12}: checkout: moving from main to new_branch
+[33m30aabc6[m HEAD@{13}: commit: Assignment5
+[33m70a8a6a[m HEAD@{14}: commit: Assignment 4 and 5
+[33m87f3340[m HEAD@{15}: commit: Assignment 3
+[33mec68bc3[m HEAD@{16}: commit: Assignment1
+[33mf9120e8[m HEAD@{17}: commit (merge): Java assignment2
+[33me9433a1[m HEAD@{18}: commit: assignment2
+[33m62886d3[m HEAD@{19}: commit: Assignment2
+[33m99bc410[m HEAD@{20}: commit: SOLID PRINCIPLES
+[33m5d1d351[m[33m ([m[1;31morigin/new_branch1[m[33m)[m HEAD@{21}: clone: from https://github.com/krishnavamsig/krishnavamsig-zemoso-training.git
