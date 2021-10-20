@@ -36,7 +36,3 @@ public class Demo{
 		}	
 		
 }
-//str1 and str chane names
-//use boolean for flag
-//path for home
-//remove comments

@@ -10,9 +10,9 @@ public class pingHost {
 			BufferedReader inputStream = new BufferedReader(
 					new InputStreamReader(process.getInputStream()));
 
-			String s = "";
-			while ((s = inputStream.readLine()) != null) {
-				System.out.println(s);
+			String text = "";
+			while ((text = inputStream.readLine()) != null) {
+				System.out.println(text);
 			}
 
 		} 
@@ -31,6 +31,3 @@ public class pingHost {
 	
 	}
 }
-//scanner names
-//change p=process
-//s=text
