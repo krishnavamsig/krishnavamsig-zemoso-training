@@ -22,12 +22,12 @@ public class stream {
         // 2.Get the names of all students who have enrolled after 2018?
 
 
-        List<String> after2018=list.stream()
+        List<String> names=list.stream()
                 .filter(student -> student.yearOfEnrollment>2018)
                 .map(student -> student.name)
                 .collect(Collectors.toList());
 
-        for(String name : after2018)
+        for(String name : names)
             System.out.println(name+", ");
     }
 
@@ -157,5 +157,8 @@ public class stream {
         example.printAllDepartments(employeeList);
         System.out.println("\n");
         example.studentsInEachDepartment(employeeList);
+        System.out.println("\n");
+        example.maleStudentsInCSE(employeeList);
+
     }
 }

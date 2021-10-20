@@ -1,21 +1,18 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.net.*;
 import java.util.Scanner;
 public class pingHost {
 
   public static void runSystemCommand(String command) {
 
 		try {
-			Process p = Runtime.getRuntime().exec(command);
+			Process process = Runtime.getRuntime().exec(command);
 			BufferedReader inputStream = new BufferedReader(
-					new InputStreamReader(p.getInputStream()));
+					new InputStreamReader(process.getInputStream()));
 
 			String s = "";
-			// reading output stream of the command
 			while ((s = inputStream.readLine()) != null) {
 				System.out.println(s);
-				//p.destroy();
 			}
 
 		} 
@@ -26,11 +23,14 @@ public class pingHost {
 	public static void main(String[] args) {
 		
 		String ip;
-		Scanner in = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the ip address : ");
-		ip =in.nextLine();
+		ip =scanner.nextLine();
 		runSystemCommand("ping " + ip);
-
+		scanner.close();
 	
 	}
 }
+//scanner names
+//change p=process
+//s=text

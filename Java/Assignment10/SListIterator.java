@@ -28,7 +28,7 @@ public class SListIterator {
 
        if (currNode != null && currNode.data == key) {
            list.head = currNode.next; // Changed head
-          System.out.println(key + " found and deleted");
+           System.out.println(key + " found and deleted");
            return;
        }
        while (currNode != null && currNode.data != key) {

@@ -3,35 +3,40 @@ import java.util.Scanner;
 public class Demo{
 
 	private void getFile()
-	{
-		
-		File file = new File("/krishnavamsig-zemoso-training/java/Assignment1");
-		String str ;
-		Scanner sc = new Scanner(System.in);
+	{ 			
+		File file = new File("/home/krishg/abc");
+		String firstString ;
+		Scanner scanner = new Scanner(System.in);
 		do{
-			int flag =0;
+			Boolean flag =false;
 			System.out.println("Enter the name of the folder");
-			str =sc.nextLine();
+			firstString =scanner.nextLine();
 			 String[] files = file.list();
 			for (String string : files){
-				 Boolean str1 = str.equals(string);
-				if (str1){
-				flag = 1;
-               // System.out.println("The file named"+string+"is found and the path is"+ file.getAbsolutePath());
+				 Boolean secondString = firstString.equals(string);
+				if (secondString){
+				flag = true;
 				System.out.println("File Found : ");
 				System.out.println(string);
 				System.out.println("Path : "+ file.getAbsolutePath());
 				}			
 			}
-				if(flag == 0)
+				if(flag == false)
 				{
 					System.out.println("File not find.Try again.");
 				}
-			} while(true);
+			}
+			 while(true);
+			
 	}
 
 		public static void main(String[] args){
 			Demo obj =new Demo();
 			obj.getFile();
 		}	
+		
 }
+//str1 and str chane names
+//use boolean for flag
+//path for home
+//remove comments
