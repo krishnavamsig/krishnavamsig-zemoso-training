@@ -1,0 +1,50 @@
+---------------------------1-----------------------------------
+-- show tables;
+-- --select * from film;--
+-- select * from category;
+-- select * from film_category;
+Select title from film f inner join film_category fc inner join category c on 
+fc.film_id=f.film_id and
+fc.category_id=c.category_id and
+c.name='Comedy' and
+f.rating='PG-13';
+
+----------------------------2-------------------------------------
+SELECT film.title ,count(customer.customer_id) AS customer_count FROM customer 
+INNER JOIN rental ON customer.customer_id= rental.customer_id 
+INNER JOIN inventory ON rental.inventory_id=inventory.inventory_id 
+INNER JOIN film ON inventory.film_id=film.film_id 
+INNER JOIN film_category ON film.film_id=film_category.film_id 
+INNER JOIN category ON category.category_id=film_category.category_id 
+WHERE category.name="horror" GROUP BY film.film_id ORDER BY customer_count DESC LIMIT 3;
+
+----------------------------3------------------------------------------------
+SELECT distinct cu.first_name,c.name ,co.country FROM customer cu 
+inner join address a on  cu.address_id=a.address_id
+inner join city ci on a.city_id=ci.city_id 
+inner join country co on ci.country_id=co.country_id 
+inner join rental r on r.customer_id=cu.customer_id 
+inner join inventory i on r.inventory_id=i.inventory_id 
+inner join film_category fc on i.film_id=fc.film_id 
+inner join category c on fc.category_id=c.category_id 
+where  c.name='Sports' and co.country='India' ;
+
+-----------------------------4-----------------------------------------------
+
+SELECT distinct cu.first_name,cu.last_name,co.country,ac.first_name,ac.last_name,cu.customer_id  FROM customer cu 
+inner join address a on  cu.address_id=a.address_id
+inner join city ci on  a.city_id=ci.city_id
+inner join country co on  ci.country_id=co.country_id
+inner join rental r on r.customer_id=cu.customer_id
+inner join inventory i on r.inventory_id=i.inventory_id 
+inner join film_actor fa on i.film_id=fa.film_id 
+inner join actor ac on  fa.actor_id=ac.actor_id
+where co.country='Canada' 
+and ac.first_name='Nick' and ac.last_name='WAHLBERG';
+
+------------------------5----------------------------------------
+
+SELECT count(actor.actor_id) FROM film 
+INNER JOIN film_actor ON film.film_id=film_actor.film_id 
+INNER JOIN actor ON actor.actor_id=film_actor.actor_id 
+WHERE actor.first_name='SEAN' AND actor.last_name='WILLIAMS';
