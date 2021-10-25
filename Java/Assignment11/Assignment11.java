@@ -27,7 +27,6 @@ class Assignment11{
         }
     public void writefile()
     {
-       // HashMap<Character, Integer> Map= new HashMap<Character, Integer>();
         try {
 			File file =new File("/home/krishg/abc/output");
 			FileWriter fwrite=new FileWriter(file);
