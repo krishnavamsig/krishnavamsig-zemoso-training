@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  
+  }
+    * {
+    box-sizing: border-box;
+  }
+  .p{
+      color: wheat;
+  }
+  
+  
+  .column2
+  {
+    float: right;
+    width: 40%;
+    padding: 10px;
+    height:100vh;
+    position: relative;
+    background-color: cornsilk;
+  
+  }
+  .column2 > img
+  {
+      padding-left:15%;
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .column1 {
+     
+    float:left;
+    width: 60%;
+    padding: 20px;
+    height:100vh;
+   background-color: brown;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  .row{
+    content: "";
+    display: flex;
+    
+    clear: both;
+    position: relative;
+  }
+  
+ 
